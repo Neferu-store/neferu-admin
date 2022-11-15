@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "213382953414",
+    "project_id": "designprint-45627",
+    "storage_bucket": "designprint-45627.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213382953414:android:0d926fdd2c63d993575ac7",
+        "android_client_info": {
+          "package_name": "com.example.printdesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213382953414-ijl6tkn4t4itasv36002q8tttiaom4sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5CUQ0tNeUSINjyPsEguzsGT6VeU70mUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213382953414-ijl6tkn4t4itasv36002q8tttiaom4sr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213382953414:android:3848328cfbf9aaef575ac7",
+        "android_client_info": {
+          "package_name": "com.example.printdesignadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213382953414-ijl6tkn4t4itasv36002q8tttiaom4sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5CUQ0tNeUSINjyPsEguzsGT6VeU70mUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213382953414-ijl6tkn4t4itasv36002q8tttiaom4sr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
