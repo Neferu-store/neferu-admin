@@ -7,7 +7,7 @@ class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     goToSignIn() {
-      Future.delayed(const Duration(milliseconds: 2500), () {
+      Future.delayed(const Duration(milliseconds: 1500), () {
         Navigator.pushReplacement(
             context,
             MaterialPageRoute(

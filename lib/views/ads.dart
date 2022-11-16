@@ -36,21 +36,14 @@ class _AdsState extends State<Ads> {
               drawer: const OurDrawer(),
               body: adsProvider.isLoading
                   ? Widgets.loading
-                  : SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          ListView.separated(
-                            shrinkWrap: true,
-                            separatorBuilder: (context, index) =>
-                                const Divider(),
-                            itemCount: adsList.length,
-                            itemBuilder: (context, index) {
-                              return adItem(adsProvider, adsList, index,
-                                  context, screnWidth);
-                            },
-                          )
-                        ],
-                      ),
+                  : ListView.separated(
+                      //  shrinkWrap: true,
+                      separatorBuilder: (context, index) => const Divider(),
+                      itemCount: adsList.length,
+                      itemBuilder: (context, index) {
+                        return adItem(
+                            adsProvider, adsList, index, context, screnWidth);
+                      },
                     ));
         });
   }

@@ -216,22 +216,22 @@ class DeliveryAddress {
 }
 
 class ContactInfoGift {
-  String? senderName;
-  String? reciverName;
-  String? senderPhone;
-  String? recieverPhone;
+  String? senderName, reciverName, senderPhone, recieverPhone, message;
 
   ContactInfoGift(
       {this.reciverName,
       this.recieverPhone,
       this.senderPhone,
-      this.senderName});
+      this.senderName,
+      this.message});
 
   ContactInfoGift.fromJson(Map<String, dynamic> json) {
+    print(json);
     senderName = json['senderName'];
     reciverName = json['RecieverName'];
     senderPhone = json['senderPhone'];
     recieverPhone = json['reciverPhone'];
+    message = json['message'];
   }
 
   Map<String, dynamic> toJson() {

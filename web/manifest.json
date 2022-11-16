@@ -1,11 +1,11 @@
 {
-    "name": "printdesignadmin",
-    "short_name": "printdesignadmin",
+    "name": "Neferu Admin",
+    "short_name": "Neferu Admin",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Neferu Admin Controll Panel",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

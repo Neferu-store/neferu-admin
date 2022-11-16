@@ -27,6 +27,17 @@ class OrderDetails extends StatelessWidget {
             paidAmount(),
             titleContainer('العنوان'),
             address(),
+            order.contactInfoGift.message != null
+                ? Column(
+                    children: [
+                      titleContainer('الرسالة'),
+                      Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: SelectableText(order.contactInfoGift.message!),
+                      ),
+                    ],
+                  )
+                : const SizedBox(),
             titleContainer('الاوردر'),
             items()
           ],
@@ -217,12 +228,12 @@ class OrderDetails extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         itemCount: orderItems.length,
         itemBuilder: (context, index) => InkWell(
-              child: Row(
+              child: Column(
                 children: [
                   //    img
                   SizedBox(
                     height: 250,
-                    width: 250,
+                    width: 500,
                     child: Widgets.cachedImg(
                         orderItems[index].colorsAndImgURL.values.first[0]),
                   ),
@@ -237,6 +248,7 @@ class OrderDetails extends StatelessWidget {
                       Text('${order.orderItems[index].size} : المقاس'),
                       //color
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             decoration: BoxDecoration(
@@ -248,8 +260,7 @@ class OrderDetails extends StatelessWidget {
                                       blurRadius: 3,
                                       color: Color.fromARGB(147, 255, 255, 255))
                                 ],
-                                borderRadius: const BorderRadius.all(
-                                    Radius.circular(50))),
+                                shape: BoxShape.circle),
                             height: 20,
                             width: 20,
                           ),
